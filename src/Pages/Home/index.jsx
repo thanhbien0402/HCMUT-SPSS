@@ -7,16 +7,20 @@ const Home = () => {
         <h1>Trang chủ</h1>
       </div>
       <div className="home-button">
-        <Button name="In" icon="./Images/image3.svg" address="/Print" />
         <Button
-          name="Lịch sử in"
+          name="Lịch sử in ấn"
           icon="./Images/image5.svg"
           address="/History"
         />
         <Button
-          name="Mua giấy"
+          name="Cài đặt máy in"
+          icon="./Images/image1.svg"
+          address="/PrinterSetting"
+        />
+        <Button
+          name="Cài đặt in ấn"
           icon="./Images/raphael_paper.svg"
-          address="/BuyPaper"
+          address="/PrintingSetting"
         />
       </div>
       <h1 className="home-logout">Đăng xuất</h1>

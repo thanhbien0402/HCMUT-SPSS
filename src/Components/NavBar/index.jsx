@@ -14,7 +14,6 @@ const NavBar = () => {
         </Link>
         <p>Hướng dẫn</p>
         <p>Hỗ trợ</p>
-        <h2>Số giấy còn lại: 0</h2>
       </div>
     </nav>
   );
