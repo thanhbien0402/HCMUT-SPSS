@@ -22,7 +22,7 @@ const PrintingLogsTable = ({ printingLogs }) => {
                 <td>{log.file_name}</td>
                 <td>{log.start}</td>
                 <td>{log.stop}</td>
-                <td>{log.date}</td>
+                <td>{formatDate(log.date)}</td>
                 <td>{log.page_number}</td>
               </tr>
             ))}
@@ -31,5 +31,16 @@ const PrintingLogsTable = ({ printingLogs }) => {
       </div>
     );
   };
+
+// const isDate = (value) => value instanceof Date && !isNaN(value);
+
+
+const formatDate = (date) => {
+  return date.toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  });
+};
   
   export default PrintingLogsTable;
