@@ -5,6 +5,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { filterPrintingLogs } from '../../Controllers/log_controller';
 import { ReturnButton } from "../../Components";
 import { PrintingLogsTable } from "../../Components";
+import vi from 'date-fns/locale/vi';
+
 const StudentLog = () => {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
@@ -64,16 +66,16 @@ const StudentLog = () => {
 
       <div className="filter">
         <div className="input-container">
-            <label htmlFor="studentId">MSSV</label>
+            <label htmlFor="studentId">MSSV </label>
 
             <input 
               type="text" 
               id="studentId" 
-              name="studentId" 
-              placeholder="Nhập MSSV" 
+              name="studentId"
               value={studentId}
               onChange={(event) => setStudentId(event.target.value)}
               onKeyDown={handleKeyDown}
+              readOnly={selectAllStudents}
             />
 
         </div>
@@ -91,31 +93,31 @@ const StudentLog = () => {
 
         <div className="filter">
           <div className="input-container">
-            <label htmlFor="startDate">From</label>
+            <label htmlFor="startDate">Từ </label>
               <DatePicker
                   id="startDate"
                   selected={startDate}
                   onChange={(date) => setStartDate(date)}
-                  onKeyDown={handleKeyDown}
                   selectsStart
                   startDate={startDate}
                   endDate={endDate}
                   dateFormat="dd/MM/yyyy"
-                  placeholderText="Ngày bắt đầu"
+                  locale={vi}
+                  readOnly={selectAllDates}
               />
           </div>
           <div className="input-container">
-            <label htmlFor="endDate">To</label>
+            <label htmlFor="endDate">Đến </label>
               <DatePicker
                   id="endDate"
                   selected={endDate}
                   onChange={(date) => setEndDate(date)}
-                  onKeyDown={handleKeyDown}
                   selectsStart
                   startDate={startDate}
                   endDate={endDate}
                   dateFormat="dd/MM/yyyy"
-                  placeholderText="Ngày kết thúc"
+                  locale={vi}
+                  readOnly={selectAllDates}
               />
           </div>
           <div className="input-container">

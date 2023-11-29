@@ -5,6 +5,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { summaryPrintingLogs } from '../../Controllers/log_controller';
 import { ReturnButton } from "../../Components";
 import { PrintingLogsTable } from "../../Components";
+import vi from 'date-fns/locale/vi';
+
 const PrintReport = () => {
   const today = new Date();
   const curr_year = today.getFullYear();
@@ -36,12 +38,13 @@ const PrintReport = () => {
       </div>
       <div className="filter">
           <div className="input-container">
-            <label htmlFor="date">Thời gian</label>
+            <label htmlFor="date">Thời gian </label>
             {selectAnnualReport ? (
               <DatePicker
                 selected={selectedDate}
                 onChange={handleDateChange}
                 dateFormat="yyyy"
+                locale={vi}
                 showYearPicker
               />
             ) : (
@@ -49,6 +52,7 @@ const PrintReport = () => {
                 selected={selectedDate}
                 onChange={handleDateChange}
                 dateFormat="MM/yyyy"
+                locale={vi}
                 showMonthYearPicker
               />
             )}
