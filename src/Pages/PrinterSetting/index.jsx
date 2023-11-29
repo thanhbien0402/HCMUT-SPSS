@@ -175,7 +175,7 @@ const PrinterSetting = () => {
                       className="edit-button"
                       onClick={() => handleEditPrinter(printer.id)}
                     >
-                      <img src="public/Images/pen.svg" alt="Edit" />
+                      <img src="/Images/pen.svg" alt="Edit" />
                     </button>
                   </td>
                 </tr>
