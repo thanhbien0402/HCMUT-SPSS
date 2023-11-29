@@ -34,7 +34,6 @@ const PrinterLog = () => {
   };
 
   useEffect(() => {
-    console.log('Updated selectAllDates:', selectAllDates);
     // Ensure 'printerId', 'startDate', and 'endDate' are up to date
     updateTable(printerId, startDate, endDate);
   }, [selectAllDates, printerId, startDate, endDate]);

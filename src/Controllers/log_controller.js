@@ -4,7 +4,6 @@ const filterPrintingLogs = (sid, pid, startDate, endDate) => {
     return hardcodedPrintingLogs.filter(log => {
         // Check sid if defined and not equal
         if (sid !== '' && log.sid !== sid) {
-            // console.log("haha1")
             return false;
         }
 
@@ -27,4 +26,16 @@ const filterPrintingLogs = (sid, pid, startDate, endDate) => {
     });
 };
 
-export { filterPrintingLogs };
+const summaryPrintingLogs = (month, year) => {
+    return hardcodedPrintingLogs.filter(log => {
+        if(year === log.date.getFullYear()) {
+            if (month !== null && month !== log.date.getMonth()) {
+                return false;
+            }
+            return true;
+        }
+        return false;
+    });
+};
+
+export { filterPrintingLogs, summaryPrintingLogs };

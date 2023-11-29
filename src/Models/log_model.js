@@ -6,7 +6,7 @@ const hardcodedPrintingLogs = [
         file_name: 'chemistry.pdf',
         start: '16:00:12',
         stop: '16:00:30',
-        date: new Date(2023,10,20),
+        date: new Date(2022,10,2),
         page_number: 50,
         
     },
@@ -17,7 +17,7 @@ const hardcodedPrintingLogs = [
         file_name: 'maths.pdf',
         start: '16:00:12',
         stop: '16:00:30',
-        date: new Date(2023,10,12),
+        date: new Date(2022,10,3),
         page_number: 50,
     },
     {
@@ -27,7 +27,7 @@ const hardcodedPrintingLogs = [
         file_name: 'chemistry.pdf',
         start: '16:00:12',
         stop: '16:00:30',
-        date: new Date(2023,10,18),
+        date: new Date(2022,11,4),
         page_number: 50,
     },
     {
@@ -37,7 +37,7 @@ const hardcodedPrintingLogs = [
         file_name: 'literature.pdf',
         start: '16:00:12',
         stop: '16:00:30',
-        date: new Date(2023,10,10),
+        date: new Date(2023,10,4),
         page_number: 50,
     },
     {
@@ -47,7 +47,7 @@ const hardcodedPrintingLogs = [
         file_name: 'movies.pdf',
         start: '16:00:12',
         stop: '16:00:30',
-        date: new Date(2023,10,3),
+        date: new Date(2023,10,5),
         page_number: 50,
     },
     {
@@ -57,7 +57,7 @@ const hardcodedPrintingLogs = [
         file_name: 'chemistry.pdf',
         start: '16:00:12',
         stop: '16:00:30',
-        date: new Date(2023,11,12),
+        date: new Date(2023,10,5),
         page_number: 50,
     },
     {
@@ -67,7 +67,7 @@ const hardcodedPrintingLogs = [
         file_name: 'chemistry.pdf',
         start: '16:00:12',
         stop: '16:00:30',
-        date: new Date(2023,10,12),
+        date: new Date(2023,10,5),
         page_number: 50,
     },
     {
@@ -77,7 +77,7 @@ const hardcodedPrintingLogs = [
         file_name: 'se.pdf',
         start: '16:00:12',
         stop: '16:00:30',
-        date: new Date(2023,10,12),
+        date: new Date(2023,10,6),
         page_number: 50,
     },
     {
@@ -87,7 +87,7 @@ const hardcodedPrintingLogs = [
         file_name: 'linear.pdf',
         start: '16:00:12',
         stop: '16:00:30',
-        date: new Date(2023,10,25),
+        date: new Date(2023,10,15),
         page_number: 50,
     },
     {
@@ -107,7 +107,7 @@ const hardcodedPrintingLogs = [
         file_name: 'physics.pdf',
         start: '16:00:12',
         stop: '16:00:30',
-        date: new Date(2023,10,1),
+        date: new Date(2023,10,19),
         page_number: 50,
     },
     {
@@ -117,10 +117,39 @@ const hardcodedPrintingLogs = [
         file_name: 'physics.pdf',
         start: '16:00:12',
         stop: '16:00:30',
-        date: new Date(2023,10,7),
+        date: new Date(2023,10,20),
         page_number: 50,
     },
-    
+    {
+        id: 13,
+        sid: '2052762',
+        pid: 'P002',
+        file_name: 'dsa.pdf',
+        start: '16:00:12',
+        stop: '16:00:30',
+        date: new Date(2023,10,20),
+        page_number: 50,
+    },
+    {
+        id: 14,
+        sid: '2052762',
+        pid: 'P003',
+        file_name: 'computer_architecture.pdf',
+        start: '16:00:12',
+        stop: '16:00:30',
+        date: new Date(2023,10,20),
+        page_number: 50,
+    },
+    {
+        id: 15,
+        sid: '2052762',
+        pid: 'P002',
+        file_name: 'triet_hoc_mac_lenin.pdf',
+        start: '16:00:12',
+        stop: '16:00:30',
+        date: new Date(2023,10,20),
+        page_number: 50,
+    },
 ];
 export { hardcodedPrintingLogs };
   

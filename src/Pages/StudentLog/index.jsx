@@ -34,7 +34,6 @@ const StudentLog = () => {
   };
 
   useEffect(() => {
-    console.log('Updated selectAllDates:', selectAllDates);
     // Ensure 'studentId', 'startDate', and 'endDate' are up to date
     updateTable(studentId, startDate, endDate);
   }, [selectAllDates, studentId, startDate, endDate]);
