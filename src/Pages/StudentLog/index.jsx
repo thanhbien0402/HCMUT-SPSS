@@ -71,7 +71,7 @@ const StudentLog = () => {
               type="text" 
               id="studentId" 
               name="studentId" 
-              placeholder="Enter Student ID" 
+              placeholder="Nhập MSSV" 
               value={studentId}
               onChange={(event) => setStudentId(event.target.value)}
               onKeyDown={handleKeyDown}
