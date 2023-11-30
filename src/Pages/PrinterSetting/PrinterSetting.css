@@ -9,19 +9,37 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.printsetting-title {
+.printsetting-header {
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center; /* Change this to center to align the title */
+  position: relative; /* Add this to position the return arrow absolutely */
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 6em;
 }
-
+.printsetting-header h1 {
+  margin: 0; /* This will keep the title centered */
+}
+.return-button {
+  position: absolute;
+  right: 9em; /* Align to the right with 20px spacing */
+  width: 4vw;
+  cursor: pointer;
+  margin-left: 0; /* Ensure there's no left margin */
+}
 .printsetting {
   background-color: #f4f7fa;
   padding: 20px;
 }
 
+.printsetting-title {
+  flex: 1; /* This will allow the title to take up the available space */
+  text-align: center; /* This will center the title text */
+}
 .printsetting-title h1 {
-  color: #333;
+  margin: 0; /* Remove margin to align title properly */
+  /* Other styles can remain the same */
 }
 
 .printsetting-table {
@@ -66,9 +84,13 @@ body {
 }
 
 .printsetting-actions {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5em;
   display: flex;
-  justify-content: center; /* Center buttons horizontally */
-  padding-top: 20px; /* Space above the buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
 }
 
 .printsetting-actions button {
@@ -103,7 +125,7 @@ body {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.1s;
+  width: 7em;
 }
 
 .add-button {
@@ -111,7 +133,7 @@ body {
   color: white;
 }
 
-.cancel-button {
+.delete-button {
   background-color: #aab3c1;
   color: white;
 }
