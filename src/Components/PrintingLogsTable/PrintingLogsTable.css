@@ -1,5 +1,6 @@
 .printing-logs-table-container {
     margin: 20px;
+    
 }
   
 .printing-logs-table {
@@ -12,11 +13,18 @@
 .printing-logs-table td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: center;
+    border: none;
+}
+.printing-logs-table tr:nth-child(even){
+    background-color: #ccc; /* Color for even rows */
+    color: #3c8aff;
 }
 
 .printing-logs-table th {
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
+    background-color: #3c8aff;
+    color:white;
 }
 
 .printing-logs-table tbody tr:hover {
