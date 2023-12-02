@@ -1,7 +1,7 @@
 import "./BuyPaper.css";
 import React, { useState } from "react";
 import { ReturnButton, PlusButton } from "../../Components";
-const BuyPaper = () => {
+const BuyPaper = (props) => {
   const [amount, setAmount] = useState(0);
   const updateCount = (value) => {
     setAmount((prevCount) => {
@@ -11,6 +11,10 @@ const BuyPaper = () => {
   };
   const navigate = () => {
     if (amount > 0) {
+      props.setTrigger((prevAmount) => {
+        const updatedAmount = prevAmount + amount;
+        return updatedAmount < 0 ? 0 : updatedAmount;
+      });
       setAmount(0);
       window,
         open(

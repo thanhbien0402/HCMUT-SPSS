@@ -1,6 +1,7 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-const NavBar = () => {
+const NavBar = (props) => {
+  const amount = props.amount;
   return (
     <nav className="navbar">
       <div className="navbar-first-section">
@@ -14,7 +15,7 @@ const NavBar = () => {
         </Link>
         <p>Hướng dẫn</p>
         <p>Hỗ trợ</p>
-        <h2>Số giấy còn lại: 0</h2>
+        <h2>Số giấy còn lại: {amount}</h2>
       </div>
     </nav>
   );

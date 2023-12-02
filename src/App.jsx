@@ -5,19 +5,25 @@ import { NavBar } from "./Components";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [paper, setPaper] = useState(0);
 
   return (
     <Router>
       <div className="App">
-        <NavBar />
+        <NavBar amount={paper} />
         <div className="content">
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/BuyPaper" element={<BuyPaper />} />
+            <Route
+              path="/BuyPaper"
+              element={<BuyPaper setTrigger={setPaper} />}
+            />
             <Route path="/History" element={<History />} />
             <Route path="/Print" element={<Print />} />
-            <Route path="/PrintMenu" element={<PrintMenu />} />
+            <Route
+              path="/PrintMenu"
+              element={<PrintMenu amount={paper} setTrigger={setPaper} />}
+            />
           </Routes>
         </div>
       </div>
